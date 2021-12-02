@@ -3,6 +3,7 @@ def create_data_array(path):
     Lines = file.readlines()
     return Lines
 
+
 def depth_measure_increase():
 
     sweep_data = create_data_array('DataFiles/SonarSweep01.txt')
@@ -13,6 +14,7 @@ def depth_measure_increase():
             increment_count += 1
 
     return increment_count
+
 
 def sliding_window_increase():
 

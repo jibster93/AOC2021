@@ -3,6 +3,7 @@ def create_data_array(path):
     Lines = file.readlines()
     return Lines
 
+
 def pilot_submarine():
 
     dive_instructions = create_data_array('DataFiles/DiveInstructions.txt')
@@ -20,6 +21,7 @@ def pilot_submarine():
             depth += int(value)
 
     return(position * depth)
+
 
 def advanced_pilot_submarine():
 
@@ -43,7 +45,4 @@ def advanced_pilot_submarine():
     return(position * depth)
 
 
-
-
 print(f'Part 1 - Calculated rudementry position: {pilot_submarine()}\nPart 2 - Calculated advanced positionn: {advanced_pilot_submarine()}')
-
